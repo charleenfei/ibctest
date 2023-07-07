@@ -26,7 +26,7 @@ import (
 	transfer "github.com/cosmos/ibc-go/v7/modules/apps/transfer"
 	ibccore "github.com/cosmos/ibc-go/v7/modules/core"
 	ibctm "github.com/cosmos/ibc-go/v7/modules/light-clients/07-tendermint"
-	ibcwasm "github.com/cosmos/ibc-go/v7/modules/light-clients/08-wasm"
+	// ibcwasm "github.com/cosmos/ibc-go/tree/feat/wasm-clients"
 )
 
 func DefaultEncoding() testutil.TestEncodingConfig {
@@ -52,7 +52,7 @@ func DefaultEncoding() testutil.TestEncodingConfig {
 		transfer.AppModuleBasic{},
 		ibccore.AppModuleBasic{},
 		ibctm.AppModuleBasic{},
-		ibcwasm.AppModuleBasic{},
+		// ibcwasm.AppModuleBasic{},
 	)
 }
 
